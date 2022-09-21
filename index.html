@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>happy birthday</title>
+</head>
+<body>
+	<div class="form-box">
+<form>
+	
+	<h1>ENTER YOUR NAME!</h1>
+	<div class="input-box">
+	<input type="text" id="username" placeholder="Name">
+</div>
+	<center><button onclick="validate()">GO</button></center>
+</form>
+</div>
+
+<script>
+	function validate() {
+		
+		var username=document.getElementById("username").value;
+		if(username=="Shanmuga priya")
+		{
+			window.open("main.html");
+		}
+	   else{
+		alert("vro! Enter the correct name ");
+	}
+}
+</script>
+<style type="text/css">
+	body {
+  background-color: #fdbf00;
+}
+	.form-box{
+		width: 500px;
+		background: rgba(0,0,0,0.8);
+		margin: 12% auto;
+		padding: 50px 0;
+		color: #fff;
+		box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+	}
+
+	h1{
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.input-box{
+		 margin: 31px auto;
+		 width: 80%;
+		 border-bottom: 1px solid #fff;
+		 padding-top: 10px;
+		 padding-bottom: 5px;
+	}
+
+	.input-box input{
+		width: 90%;
+		border: none;
+		outline: none;
+		background: transparent;
+		color: #fff;
+	}
+	
+	::placeholder{
+		color: #ccc;
+	}
+	button{
+		border-radius: 12px;
+
+	}
+</style>
+</body>
+</html>
